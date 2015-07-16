@@ -196,6 +196,13 @@ html, body {
 #devis {
     height: auto;
 }
+#devis label {
+    font-size: 14px;
+}
+#devis .tit {
+    font-weight: bold;
+    padding-top: 9px;
+}
 
 #contacts {
     height: auto;
