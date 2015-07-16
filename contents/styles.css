@@ -1,0 +1,331 @@
+#intro {
+    background-color: #e6e6e9;
+}
+
+#intro .container-image {
+    height: 100%;
+}
+
+#intro .background-image {
+    height: 100%;
+}
+
+#intro .container-intro {
+    height: 740px;
+}
+
+#intro .button-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#intro .button-container .btn {
+    width: 140px;
+    margin-top: 5px;
+}
+
+#intro .intro-description {
+    background-color: transparent;
+    padding-left: 10px;
+}
+
+#flux {
+   /* padding-top:15px;
+    width:100%;
+    background-color: white;
+    position: absolute;
+    bottom: 0px;*/
+    margin-top: 15px;
+}
+
+#references {
+    padding-top: 20px;
+    background-color: white;
+    height: auto;
+    overflow: auto;
+}
+
+#refs {
+    background-color: white;
+}
+
+#refs .vert {
+    height: 120px;
+    white-space: nowrap;
+    text-align: center;
+}
+#refs .helper {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#refs img{
+    /*width: 100%;*/
+    max-width: 120px;
+    max-height: 90px;
+    padding: 5px;
+    vertical-align: middle;
+}
+
+
+#luxe {
+    height: 100%;
+}
+
+#luxe .text-carousel {
+    padding-left: 30px;
+}
+
+#luxe .text-carousel.white {
+    color: #FFF;
+}
+
+.carousel {
+    height: 100%;
+}
+.carousel-inner {
+    height: 100%;
+}
+.carousel .item {
+    height: 100%;
+    padding-top: 50px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    color: grey;
+    background-color: transparent;
+}
+
+.carousel-control {
+    width: 5%;
+}
+
+.carousel .item-black {
+    background-color: #000;
+}
+
+.logo-img {
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto 50px auto;
+}
+
+.logo-img img {
+    max-width: 150px;
+    max-height: 90px;
+}
+
+.carousel iframe {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#solutions {
+    padding-top: 50px;
+}
+
+#solutions .solutions-description {
+    float: none;
+    margin: 0px auto 50px auto;
+}
+
+#solutions .triblock {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#solutions .solutions-block {
+    margin-top: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#solutions .color-grey {
+    color: #8C8C8C;
+}
+
+#solutions .color-blue {
+    color: #008cba;
+}
+
+#solutions .color-orange {
+    color: #e99002;
+}
+
+#solutions .color-green {
+    color: #43ac6a;
+}
+
+#processus p {
+    word-break: break-word;
+}
+
+#contacts .social li {
+    margin: -3.2em 3.0em;
+}
+
+#contacts .triblock {
+    margin-bottom: 25px;
+    overflow: hidden;
+}
+
+#contacts .social {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contacts .big-link {
+    display: block;
+    font-size: 38px;
+    margin-top: 105px;
+}
+
+.prefooter {
+    margin-bottom: 100px;
+}
+
+.footer {
+    margin-bottom: 15px;
+}
+
+#mentions {
+    color: #333333;
+}
+
+#mentions .modal-body {
+    overflow-y:scroll;
+    max-height:500px;
+}
+
+#avance{
+    height: 100%;
+}
+
+
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
+    #intro .button-container .btn {
+        width: 120px;
+        padding: 6px 10px;
+        margin-top: 5px;
+    }
+}
+
+@media (min-width: 1200px){
+    #descriptif-small{
+        display: none;
+    }
+}
+
+@media (max-width: 1490px) {
+    .carousel .item .logo-img {
+        width: 250px;
+    }
+
+    .carousel .item blockquote {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 1368px) {
+    #luxe {
+        height: 800px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    #contacts .big-link {
+        font-size: 28px;
+    }
+
+    #intro .container-image {
+        height: auto;
+    }
+
+    #intro .background-image {
+        height: auto;
+        max-width: 100%;
+    }
+
+    #intro,
+    #devis,
+    #contacts,
+    #solutions,
+    #luxe {
+        height: auto;
+    }
+
+    #descriptif-large{
+        display: none;
+    }
+
+    #descriptif-small{
+        display: block;
+    }
+
+    #contacts .social {
+        height: 5em;
+        width: 15.5em;
+    }
+
+    #contacts .social li {
+        width: 5em;
+        height: 5em;
+        margin: -3.2em 1em;
+    }
+
+    #contacts .social li a {
+        line-height: 7em;
+    }
+
+    #contacts .social li a i.fa {
+        font-size: 3em;
+    }
+}
+
+.container-fluid{
+    height: 100%;
+}
+
+.jumbotron {
+    background-color: white;
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .container {
+        width: 760px;
+    }
+}
+
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (max-width: 992px) {
+    #contacts .big-link {
+        margin-top: 0;
+    }
+
+    #contacts .block {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 770px) {
+    .intro-section {
+        padding-top: 45px;
+    }
+}
+
+
+@media (max-width: 560px) {
+    #refs .btn{
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
