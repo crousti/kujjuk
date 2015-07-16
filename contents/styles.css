@@ -1,3 +1,7 @@
+html, body {
+    min-width: 300px;
+}
+
 #intro {
     background-color: #e6e6e9;
 }
@@ -44,7 +48,7 @@
     padding-top: 20px;
     background-color: white;
     height: auto;
-    overflow: auto;
+    overflow: inherit;
 }
 
 #refs {
@@ -63,17 +67,31 @@
 }
 
 #refs img{
-    /*width: 100%;*/
+    width: 100%;
     max-width: 120px;
     max-height: 90px;
     padding: 5px;
     vertical-align: middle;
 }
 
+#luxe .img-responsive, #standard .img-responsive, #avance .img-responsive {
+    max-height: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #luxe {
-    height: 100%;
+    height: 850px;
 }
+
+#avance {
+    height: 850px;
+}
+
+#standard {
+    height: 850px;
+}
+
 
 #luxe .text-carousel {
     padding-left: 30px;
@@ -92,6 +110,7 @@
 .carousel .item {
     height: 100%;
     padding-top: 50px;
+    overflow: hidden;
 }
 
 .carousel-control.left, .carousel-control.right {
@@ -124,8 +143,18 @@
     box-sizing: border-box;
 }
 
+#avance .ring-container {
+    width: 400px;
+    height: 400px;
+    background: url('../contents/bague.jpg');
+    margin-left: auto;
+    margin-right: auto;
+}
+
 #solutions {
     padding-top: 50px;
+    height: auto;
+    padding-bottom: 20px;
 }
 
 #solutions .solutions-description {
@@ -164,6 +193,14 @@
     word-break: break-word;
 }
 
+#devis {
+    height: auto;
+}
+
+#contacts {
+    height: auto;
+}
+
 #contacts .social li {
     margin: -3.2em 3.0em;
 }
@@ -184,6 +221,7 @@
     margin-top: 105px;
 }
 
+
 .prefooter {
     margin-bottom: 100px;
 }
@@ -200,11 +238,6 @@
     overflow-y:scroll;
     max-height:500px;
 }
-
-#avance{
-    height: 100%;
-}
-
 
 @media screen and (min-width: 1200px) and (max-width: 1600px) {
     #intro .button-container .btn {
@@ -259,9 +292,9 @@
         height: auto;
     }
 
-    #descriptif-large{
+    /*#descriptif-large{
         display: none;
-    }
+    }*/
 
     #descriptif-small{
         display: block;
@@ -306,6 +339,23 @@
 
 }
 
+@media (max-width: 1200px) {
+    #luxe {
+        height: 1250px;
+        overflow: hidden;
+    }
+
+    #avance {
+        height: 1160px;
+        overflow: hidden;
+    }
+
+    #standard {
+        height: 1240px;
+        overflow: hidden;
+    }
+}
+
 @media (max-width: 992px) {
     #contacts .big-link {
         margin-top: 0;
@@ -324,8 +374,27 @@
 
 
 @media (max-width: 560px) {
-    #refs .btn{
+    #refs .btn {
         padding: 6px 10px;
         font-size: 14px;
+    }
+
+    #intro .button-container .btn {
+        margin: 15px;
+        padding: 6px 10px;
+        width: 110px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    #refs .btn{
+        padding: 5px 8px;
+        font-size: 12px;
+    }
+
+    #intro .btn {
+        padding: 5px 8px;
+        font-size: 12px;
     }
 }
